@@ -19,5 +19,8 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Ejecucion de pruebass
+      - name: Ejecucion de pruebas
         run: pytest test_main.py
+        
+      - name: Compilacion exitosa
+        run: echo "Compilacion exitosa"
