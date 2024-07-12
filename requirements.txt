@@ -1,6 +1,5 @@
 ﻿coverage==7.5.4
 Flask==3.0.3
-Flask-MySQLdb==1.0.1
 Flask-SQLAlchemy==3.1.1
 PyJWT==2.6.0
 pytest==8.2.2
