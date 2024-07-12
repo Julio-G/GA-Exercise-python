@@ -1,0 +1,23 @@
+name: python exercise
+
+on: 
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Hacer checkout del proyecto
+        uses: actions/checkout@v4
+
+      - name: configurar python
+        uses: actions/setup-python@v5
+        with: 
+          python-version: '3.10'
+      
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecucion de pruebas
+        run: pytest src/test_main.py
