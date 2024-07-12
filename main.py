@@ -2,14 +2,12 @@ from flask import Flask, jsonify, request
 from datetime import datetime
 from dotenv import load_dotenv
 from models import db, genero, autor, libro
-import os
-load_dotenv() 
 
 
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv('DATABASE_URI')
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqlconnector://root:1234@localhost/dbbiblio"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 #db = SQLAlchemy(app)
