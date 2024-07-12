@@ -19,5 +19,5 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Ejecucion de pruebas
+      - name: Ejecucion de pruebass
         run: pytest src/test_main.py
