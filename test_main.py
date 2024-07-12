@@ -3,6 +3,7 @@ from main import app
 
 @pytest.fixture(scope='module')
 def client():
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://root:1234@localhost/dbbiblio"
     with app.test_client() as client:
         yield client
 
