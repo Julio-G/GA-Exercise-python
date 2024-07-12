@@ -1,10 +1,10 @@
 ﻿coverage==7.5.4
 Flask==3.0.3
 Flask-SQLAlchemy==3.1.1
-PyJWT==2.6.0
 pytest==8.2.2
 pytest-cov==5.0.0
 pytest-html==4.1.1
 pytest-metadata==3.1.1
 python-dotenv==1.0.1
 SQLAlchemy==2.0.31
+mysql-connector
